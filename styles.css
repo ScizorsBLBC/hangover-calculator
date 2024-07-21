@@ -1,0 +1,120 @@
+/* Basic Body Styling */
+body {
+    background: #0F070D;
+    font-family: 'Roboto', sans-serif;
+    color: #e3c5e3;
+    line-height: 1.666em;
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    position: relative; /* Make body relative to position footer */
+}
+
+/* Container for Input Form */
+.container {
+    width: 90%; 
+    margin: 20px auto 100px auto; /* Adjusted margin for better spacing */
+    /* padding: 20px 20px 100px 20px; Removed padding from container */
+}
+
+/* Input Group Styling */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center;
+    padding: 20px 20px; /* Added padding to input-group */
+    border-radius: 8px;
+}
+
+/* Input Field Styling */
+input, select { 
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #9370DB;
+    border-radius: 5px; 
+    color: #e3c5e3;            
+    background-color: #1F1622; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) { 
+    input, select {
+        width: 50%;
+        max-width: 300px; 
+    }
+}
+
+/* Button Styling */
+button {
+    width: auto; /* Automatically adjust width to content */
+    min-width: 150px; /* Minimum width for small screens */
+    max-width: 300px; /* Maximum width for larger screens */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9370DB;
+    color: #e3c5e3;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;  /* Center the button horizontally */
+}
+
+/* Hover Effect for Button */
+button:hover {
+    background-color: #6444a3;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1F1622; 
+    border-top: 0.5px solid #E3C5E3;
+    position: relative; /* Make footer relative for normal flow */
+    bottom: 0; /* Position it at the bottom of the container */
+    left: 0;
+    width: 100%;
+}
+
+.button-and-answer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;   /* Center items horizontally */
+    gap: 10px;            /* Add spacing between button and answer box */
+}
+
+/* Button Styling */
+button {
+    width: auto; /* Automatically adjust width to content */
+    min-width: 150px; /* Minimum width for small screens */
+    max-width: 300px; /* Maximum width for larger screens */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9370DB;
+    color: #e3c5e3;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;  /* Center the button horizontally */
+    display: block; /* Make it a block element */
+}
+
+/* Answer Box Styling */
+#answer-box {
+    width: fit-content;
+    min min-height: ;
+    min-width: 150px;     /* Match button's minimum width */
+    max-width: 90%;       /* Limit width to 90% of container */
+    padding: 10px;
+    border: 1px solid #9370DB; 
+    border-radius: 5px;
+    background-color: #1F1622;
+    color: #e3c5e3;
+    text-align: center;
+    margin: 20px auto; /* Center horizontally and vertically */
+    min-height: 20px;     /* Match button's approximate height */
+}

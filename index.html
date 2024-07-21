@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>scizors' hangover calculator</title>
+    <script src="hangover-calculator.js" defer></script> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>hangover calculator</h1>
+    <h3>answer the following questions to estimate your hangover recovery time</h3>
+
+    <div class="container"> 
+        <div class="input-group">
+            <label for="alcoholTypes">how many different types of alcohol were mixed (???)</label><br>
+            <input type="number" id="alcoholTypes">
+        </div>
+
+        <div class="input-group">
+            <label for="totalDrinks">total number of drinks (???)</label><br>
+            <input type="number" id="totalDrinks">
+        </div>
+
+        <div class="input-group">
+            <label for="abv">average ABV of the drinks (%) (rough estimate is fine) (???)</label><br>
+            <input type="number" id="abv">
+        </div>
+
+        <div class="input-group">
+            <label for="yearsDrinking">how many years of hard drinking have you endured (be honest now) (???)</label><br>
+            <input type="number" id="yearsDrinking">
+        </div>
+        
+        <div class="input-group">
+            <label for="daysDrinking">number of consecutive days drinking (???)</label><br>
+            <input type="number" id="daysDrinking">
+        </div>
+        
+        <div class="input-group">
+            <label for="hoursSlept">total hours of sleep during the bender (???)</label><br>
+            <input type="number" id="hoursSlept">
+        </div>
+        
+        <div class="input-group">
+            <label for="litersWater">liters of water drank (???)</label><br>
+            <input type="number" id="litersWater">
+        </div>
+        
+        <div class="input-group">
+            <label for="electrolytesYes">did you replenish electrolytes (???)</label><br>
+            <input type="radio" id="electrolytesYes" name="electrolytes" value="yes"> yeah
+            <input type="radio" id="electrolytesNo" name="electrolytes" value="no" checked> nope
+        </div>
+
+        <div class="input-group">
+            <label for="hardDrugsYes">were hard drugs involved (???)</label><br>
+            <input type="radio" id="hardDrugsYes" name="hardDrugs" value="yes"> yeah
+            <input type="radio" id="hardDrugsNo" name="hardDrugs" value="no" checked> nope
+        </div>
+
+        <button onclick="calculateHangoverRecovery()">lets do the damned thing (!!!)</button>
+
+        <div id="answer-box"></div> 
+    </div> <footer>
+        <p>sorry mom</p>
+    </footer>
+
+   <script src="hangover-calculator.js"></script>  </body>
+</html>
