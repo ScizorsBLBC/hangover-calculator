@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>scizors' hangover calculator</title>
-    <script src="hangover-calculator.js" defer></script> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +43,12 @@
             <label for="litersWater">liters of water drank (???)</label><br>
             <input type="number" id="litersWater">
         </div>
-        
+
+        <div class="input-group">
+            <label for="age">how old are you (???)</label><br>
+            <input type="number" id="age">
+        </div>
+
         <div class="input-group">
             <label for="electrolytesYes">did you replenish electrolytes (???)</label><br>
             <input type="radio" id="electrolytesYes" name="electrolytes" value="yes"> yeah
@@ -57,12 +61,14 @@
             <input type="radio" id="hardDrugsNo" name="hardDrugs" value="no" checked> nope
         </div>
 
-        <button onclick="calculateHangoverRecovery()">lets do the damned thing (!!!)</button>
+        <div class="button-and-answer">
+            <button onclick="calculateHangoverRecovery()">lets do the damned thing (!!!)</button>
 
-        <div id="answer-box"></div> 
+            <div id="answer-box"></div>
+        </div> 
     </div> <footer>
         <p>sorry mom</p>
     </footer>
-
-   <script src="hangover-calculator.js"></script>  </body>
+    <script src="hangover-calculator.js"></script>
+</body>
 </html>

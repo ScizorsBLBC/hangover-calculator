@@ -35,7 +35,7 @@ licensed cc0 1.0 Universal - to the extent possible under law, scizors has waive
 
 ## live demo
 
-see this calculator in action on GitHub Pages: [https://your-username.github.io/hangover-calculator/](https://your-username.github.io/hangover-calculator/) 
+see this calculator in action on GitHub Pages: https://scizorsblbc.github.io/hangover-calculator/ 
 
 ## contact
 
